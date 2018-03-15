@@ -1,0 +1,32 @@
+Milestone: Authorization
+
+The Emvents application will have two types of users or personas: attendees (people signing up to events) and organizers (people organizing events). We will differentiate the two different roles and implement some authorization rules.
+
+Get ready (0 / 1)
+Complete these tasks by yourself before meeting with your partner.
+
+Task #1
+Familiarize with ACL (Access Control Lists) for authorization, how to use the Node ACL Node library and how to configure Mongodb as database and use the Express.js middleware.
+https://github.com/optimalbits/node_acl
+
+Requirements (0 / 6)
+Complete these requirements during the session with your partner.
+
+Requirement #1
+Only the user who has created the event should be able to update or delete an event.
+
+Requirement #2
+You should implement an endpoint that returns all the events organized (created) by a given user.
+
+Requirement #3
+You should implement an endpoint that allows a user to sign up to (RSVP) an event.
+
+Requirement #4
+You should implement an endpoint that returns all the upcoming events a user has signed up for.
+
+Requirement #5
+You should implement an endpoint that allows the organizer of an event to see all the users who signed up to a given event he is organizing.
+
+Requirement #6
+All the new endpoints and authorization rules should have their corresponding unit tests.
+

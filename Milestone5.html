@@ -1,0 +1,62 @@
+Milestone: Persisting the API data with Mongodb
+
+So far we have been storing the data in memory, but Emvents Inc. wants to store the data in a persistent way. We will do that using a Mongodb database and the Mongoose ODM (Object Data Modeling).
+
+Get ready (6 / 6)
+Complete these tasks by yourself before meeting with your partner.
+
+Task #1
+Install mongodb.
+https://www.mongodb.com/download-center#community
+
+Task #2
+Familiarize with mongo concepts, like documents and collections.
+https://docs.mongodb.com/getting-started/shell/introduction/
+
+Task #3
+Use the mongo shell utility to play around. Create a new database with use command. Then, create a new collection for the events by inserting one document in it. Use findOne to get the event you just inserted.
+https://docs.mongodb.com/manual/reference/mongo-shell/
+
+Task #4
+Learn how to create, read, update and delete documents from the shell.
+https://docs.mongodb.com/manual/crud/
+
+Task #5
+What is an index and how they could help you improve the performance of your mongodb supported app?
+https://docs.mongodb.com/v3.0/core/indexes-introduction/
+
+Task #6
+Install mongoose in a sample project and understand how you can use it in you NodeJS app
+http://mongoosejs.com/docs/index.html
+
+Requirements (9 / 9)
+Complete these requirements during the session with your partner.
+
+Requirement #1
+Creating a new event should save the new event into Mongodb. Use the Node.js native driver.
+http://mongodb.github.io/node-mongodb-native/2.2/quick-start/quick-start/
+
+Requirement #2
+Updating an existing event should save the changes into Mongodb
+
+Requirement #3
+Deleting an event should delete the event from Mongodb.
+
+Requirement #4
+Create, update, delete event data into mongodb with the node native driver 
+
+Requirement #5
+Refactor the previous code using mongoose.
+
+Requirement #6
+The code should be organized using different folders for models, routing, etc.
+
+Requirement #7
+The tests created in the previous milestone should still pass.
+
+Requirement #8
+Add a new endpoint (and a test) to allow the user to search events by title.
+
+Requirement #9
+Create an index in the database to improve performance of this query. Use the mongo shell command “explain” to check the performance improvement.
+https://docs.mongodb.com/v3.2/tutorial/analyze-query-plan/
