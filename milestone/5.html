@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="EmmanuelBeja">
+    <title>Nodejs Basics</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="../index.html">Nodecircle</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="../index.php">Home</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('../assets/img/nodejs.jpg');height: 100px;">
+
+    </header>
+
+    <!-- Main Content -->
+    <div class="row" style="margin-top:10px;">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+      <div class="row">
+       <div class="col-md-8">
+         <div class="panel panel-default shadow">
+            <div class="panel-body">
+             <h5>Milestone 5: Persisting the API data with Mongodb <i class="fa fa-unlock-alt pull-right" style="font-size: 20px;"></i></h5>
+            </div>
+         </div>
+         <p>
+           So far we have been storing the data in memory, but Emvents Inc. wants to store the data in a persistent way. We will do that using a Mongodb database and the Mongoose ODM (Object Data Modeling).
+         </p>
+     <hr>
+   <div class="heading">
+     <h4>Get ready (6 / 6)</h4>
+     <p1>(Complete these tasks by yourself before meeting with your partner)</p1>
+    </div>
+    <hr>
+         <h5>Task #1</h5>
+         <p>
+            Install mongodb.<br>
+         <a href="https://www.mongodb.com/download-center#community">https://www.mongodb.com/download-center#community</a>
+         </p>
+
+         <h5>Task #2</h5>
+         <p>
+         Familiarize with mongo concepts, like documents and collections.<br>
+         <a href="https://docs.mongodb.com/getting-started/shell/introduction/">https://docs.mongodb.com/getting-started/shell/introduction/</a>
+         </p>
+
+         <h5>Task #3</h5>
+         <p>
+         Use the mongo shell utility to play around. Create a new database with use command. Then, create a new collection for the events by inserting one document in it. Use findOne to get the event you just inserted.<br>
+         <a href="https://docs.mongodb.com/manual/reference/mongo-shell/">https://docs.mongodb.com/manual/reference/mongo-shell/</a>
+         </p>
+
+         <h5>Task #4</h5>
+         <p>
+         Learn how to create, read, update and delete documents from the shell.<br>
+         <a href="https://docs.mongodb.com/manual/crud/">https://docs.mongodb.com/manual/crud/</a>
+         </p>
+
+         <h5>Task #5</h5>
+         <p>
+         What is an index and how they could help you improve the performance of your mongodb supported app?<br>
+         <a href="https://docs.mongodb.com/v3.0/core/indexes-introduction/">https://docs.mongodb.com/v3.0/core/indexes-introduction/</a>
+         </p>
+         <h5>Task #6</h5>
+         <p>
+         Install mongoose in a sample project and understand how you can use it in you NodeJS app<br>
+         <a href="http://mongoosejs.com/docs/index.html">http://mongoosejs.com/docs/index.html</a>
+         </p>
+         <br>
+        <hr>
+        <div class="heading">
+         <h4>Requirements (9/9)</h4>
+         <p1>(Complete these requirements during the session with your partner.)</p1>
+        
+        <hr>
+         <h3>Requirement #1</h3>
+         <p>
+          Creating a new event should save the new event into Mongodb. Use the Node.js native driver.
+         <a href="http://mongodb.github.io/node-mongodb-native/2.2/quick-start/quick-start/">http://mongodb.github.io/node-mongodb-native/2.2/quick-start/quick-start/</a></p>
+         </br>
+         <h3>Requirement #2</h3>
+         <p>
+         Updating an existing event should save the changes into Mongodb.
+         </p>
+         </br>
+         <h3>Requirement #3</h3>
+         <p>   
+         Deleting an event should delete the event from Mongodb.
+         </p>
+         </br>
+         <h3>Requirement #4</h3>
+         <p>
+         
+         Create, update, delete event data into mongodb with the node native driver
+         </p>
+        </br>
+         <h3>Requirement #5</h3>
+         <p>
+         Refactor the previous code using mongoose.
+         </p>
+        </br>
+         <h3>Requirement #6</h3>
+         <p>
+         The code should be organized using different folders for models, routing, etc.
+         </p>
+         <br>
+         <h3>Requirement #7</h3>
+         <p>
+         The tests created in the previous milestone should still pass.
+         </p>
+     </br>
+         <h3>Requirement #8</h3>
+         <p>
+         Add a new endpoint (and a test) to allow the user to search events by title.
+         </p>
+         </br>
+         <h3>Requirement #9</h3>
+         <p>
+         Create an index in the database to improve performance of this query. Use the mongo shell command “explain” to check the performance improvement.
+        <a href="https://docs.mongodb.com/v3.2/tutorial/analyze-query-plan/">https://docs.mongodb.com/v3.2/tutorial/analyze-query-plan/</a>
+         </p>
+     </div>
+       </div>
+       <div class="col-md-4">
+         <div class="panel panel-default shadow">
+           <a href="1.html">
+            <div class="panel-body">
+             <h5>Milestone 1: Introduction <i class="fa fa-check-circle pull-right" style="font-size: 20px;"></i></h5>
+            </div>
+           </a>
+         </div>
+
+         <div class="panel panel-default shadow">
+           <a href="2.html">
+            <div class="panel-body">
+             <h5>Milestone 2: Build a basic Node.js app with Express.js <i class="fa fa-check-circle pull-right" style="font-size: 20px;"></i></h5>
+            </div>
+           </a>
+         </div>
+
+         <div class="panel panel-default shadow">
+           <a href="3.html">
+            <div class="panel-body">
+             <h5>Milestone 3: Build an in-memory RESTful API <i class="fa fa-check-circle pull-right" style="font-size: 20px;"></i></h5>
+            </div>
+           </a>
+         </div>
+
+         <div class="panel panel-default shadow">
+           <a href="4.html">
+            <div class="panel-body">
+             <h5>Milestone 4: Testing your API <i class="fa fa-check-circle pull-right" style="font-size: 20px;"></i></h5>
+            </div>
+           </a>
+         </div>
+
+         <div class="panel panel-default shadow panel-active">
+           <a href="5.html">
+            <div class="panel-body">
+             <h5>Milestone 5: Persisting the API data with Mongodb <i class="fa fa-check-circle pull-right" style="font-size: 20px;"></i></h5>
+            </div>
+           </a>
+         </div>
+
+         <div class="panel panel-default shadow">
+           <a href="6.html">
+            <div class="panel-body">
+             <h5>Milestone 6: Users and authentication <i class="fa fa-check-circle pull-right" style="font-size: 20px;"></i></h5>
+            </div>
+           </a>
+         </div>
+
+         <div class="panel panel-default shadow">
+           <a href="7.html">
+            <div class="panel-body">
+             <h5>Milestone 7: Authorization <i class="fa fa-check-circle pull-right" style="font-size: 20px;"></i></h5>
+            </div>
+           </a>
+         </div>
+
+         <div class="panel panel-default shadow">
+           <a href="8.html">
+            <div class="panel-body">
+             <h5>Milestone 8: Deploy your backend <i class="fa fa-check-circle pull-right" style="font-size: 20px;"></i></h5>
+            </div>
+           </a>
+         </div>
+
+       </div>
+     </div>
+     <div>
+    </div>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p class="copyright text-muted">Copyright &copy; Nodecircle 2018</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Theme JavaScript -->
+    <script src="../assets/js/app.min.js"></script>
+</body>
+</html>

@@ -1,3 +1,6 @@
+html{
+  overflow-x: hidden;
+}
 body {
   font-family: 'Lora', 'Times New Roman', serif;
   font-size: 20px;
@@ -46,6 +49,28 @@ hr.small {
   margin: 15px auto;
   border-width: 4px;
   border-color: white;
+}
+.heading h4{
+  font-size: 22px;
+  color: #37a705;
+}
+.heading p1{
+  font-size: 19px;
+}
+.heading p2{
+  font-size: 16px;
+}
+.heading h2{
+  font-size: 20px;
+  font-weight: normal;
+}
+.heading h3{
+  font-size: 17px;
+  font-weight: normal;
+}
+..content p{
+  font-size: 16px;
+  color: #808080;
 }
 .navbar-default-edit {
   background-color: #fff;
